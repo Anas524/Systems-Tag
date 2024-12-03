@@ -68,6 +68,12 @@ $(document).ready(function () {
         const aboutScreenFont = lang === 'ar' ? asarabicFont : asenglishFont;
         $('.actions li input').css('font-family', aboutScreenFont);
 
+        const legalArLetterS = '0';
+        const legalEnLetterS = '0.2rem';
+
+        const legalLetterSpacing = lang === 'ar' ? legalArLetterS : legalEnLetterS;
+        $('.inner p, .inner h2, .main-nav li a, article h2, .field label, .actions li input').css('letter-spacing', legalLetterSpacing);
+
         const asarabicDir = 'rtl';
         const asenglishDir = 'ltr';
 
@@ -85,21 +91,17 @@ $(document).ready(function () {
         $('#splashScreen').fadeOut('slow')
     }, 1000);
 
-    // Check the scroll position on page load
-    toggleNavBackground();
-
-    // Listen to the scroll event
-    $(window).on('scroll', function () {
-        toggleNavBackground();
-    });
- 
-    function toggleNavBackground() {
-        if ($(window).scrollTop() > 50) {
-            $('nav').css('background', 'white');
+    function aboutImgBackground() {
+        if (window.matchMedia("(max-width: 736px)").matches) {
+            $('.useFilter').addClass('filtered');
         } else {
-            $('nav').css('background', 'none');
+            $('.useFilter').removeClass('filtered');
         }
     }
+    
+    aboutImgBackground();
+    
+    $(window).on('resize', aboutImgBackground);
 
     $(document).ready(function() {
         //common reveal options to create reveal animations
@@ -135,6 +137,15 @@ $(document).ready(function () {
             $(this).css('transform', '');
         });
     });
+
+    $('#home').on('click', function(e) {
+        if($(window).scrollTop() === 0) {
+            location.reload(); // Reloads the page
+        } else {
+            e.preventDefault(); // Prevents default behavior if not at the top
+            $('html, body').animate({ scrollTop: 0 }, 'slow'); // Smooth scroll to top
+        }
+    })
 });
 
 $(document).ready(function () {
@@ -188,25 +199,17 @@ $(document).ready(function () {
 $(document).ready(function () {
     // Close the navigation menu when any link is clicked
     $("nav ul li a").on("click", function () {
-        $("#check").prop("checked", false); // Uncheck the checkbox
         $("nav ul").css("left", "-100%");   // Slide the menu out
     });
 
     // Toggle navigation menu on checkbtn click
     $(".checkbtn").on("click", function () {
-        if ($("#check").prop("checked")) {
+        $("nav ul").toggleClass("menu-open");
+        
+        if ($("nav ul").hasClass("menu-open")) {
             $("nav ul").css("left", "0"); // Slide the menu in
         } else {
             $("nav ul").css("left", "-100%"); // Slide the menu out
         }
     });
-
-    $('#home').on('click', function(e) {
-        if($(window).scrollTop() === 0) {
-            location.reload(); // Reloads the page
-        } else {
-            e.preventDefault(); // Prevents default behavior if not at the top
-            $('html, body').animate({ scrollTop: 0 }, 'fast'); // Smooth scroll to top
-        }
-    })
 });

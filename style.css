@@ -27,7 +27,7 @@ nav {
     position: fixed;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    transition: background 0.3s ease;
+    background-color: white;
     z-index: 10;
 }
 
@@ -279,7 +279,7 @@ label img{
     animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1));
 }
 .slider .sliderList .sliderItem img{
-    width: 180px;
+    width: 200px;
     height: 100%;
 }
 @media (max-width: 800px) {
@@ -296,8 +296,8 @@ label img{
         height: 80px;
     }
     .slider .sliderList .sliderItem img{
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 @keyframes autoRun{
@@ -383,7 +383,13 @@ footer .notice strong {
 .footer-left a img:hover {
     transform: scale(1.1);
 }
-.footer-left img:hover{
+.footer-logo {
+    width: 80px;
+    background: white;
+    border-radius: 20%;
+    transition: transform 0.3s ease;
+}
+.footer-logo:hover {
     transform: scale(1.1);
 }
 @media screen and (min-width: 600px){

@@ -3485,6 +3485,10 @@ input, select, textarea {
 		font-style: normal;
 	}
 
+	.gry-txt h2, .gry-txt p{
+		color: rgb(66, 66, 66);
+	}
+
 	nav {
 		height: 80px;
 		width: 50%;
@@ -3605,6 +3609,9 @@ input, select, textarea {
 	@media (max-width: 736px) {
 		nav {
 			background-color: white;
+		}
+		.gry-txt h2, .gry-txt p{
+			color: white;
 		}
 	}
 	@media (max-width: 385px) {
