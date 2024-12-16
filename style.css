@@ -98,6 +98,12 @@ label img{
     label.logo {
       font-size: 22px;
     }
+    nav {
+        width: 100%;
+        left: 0%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
     nav ul {
       position: fixed;
       width: 100%;
@@ -122,14 +128,6 @@ label img{
     }
     #check:checked~ul {
       left: 0;
-    }
-}
-@media (max-width: 480px) {
-    nav {
-        width: 100%;
-        left: 0%;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
     }
 }
 @media (max-width: 385px) {
@@ -282,13 +280,13 @@ label img{
     width: 200px;
     height: 100%;
 }
-@media (max-width: 800px) {
-    .slider .sliderList .sliderItem img{
-        padding-left: 5px;
-        padding-right: 5px;
+@media (max-width: 990px) {
+    .slider .sliderList .sliderItem{
+        height: 90px;
     }
-    .slider{
-        margin-top: 0;
+    .slider .sliderList .sliderItem img{
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 @media (max-width: 500px) {

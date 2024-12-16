@@ -51,8 +51,8 @@ $(document).ready(function () {
         });
 
         const coverImage = lang === 'ar'
-            ? 'img/Content guidelines Arabic Edited 2.png'
-            : 'img/Content guidelines Edited 2.png';
+            ? 'img/ST web image Arabic.png'
+            : 'img/ST web image.png';
         $('.cover-image').attr('src', coverImage);
         
         // Apply specific font-family for carousel
@@ -103,19 +103,21 @@ $(document).ready(function () {
     
     $(window).on('resize', aboutImgBackground);
 
-    $(document).ready(function() {
-        //common reveal options to create reveal animations
-        const sr = ScrollReveal({ 
-            reset: true,
-            distance: '60px',
-            duration: 2500,
-            delay: 200,
-        });
-        
-        //target elements, and specify options to create reveal animations
-        sr.reveal('.imgSR, .first-imgSR', { delay: 400, origin: 'bottom' });
-        sr.reveal('.textSR', { delay: 200, origin: 'left' });
+    
+    //common reveal options to create reveal animations
+    const sr = ScrollReveal({ 
+        reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400,
     });
+        
+    //target elements, and specify options to create reveal animations
+    sr.reveal('.imgSR, .first-imgSR', { delay: 400, origin: 'bottom' });
+    sr.reveal('.textSR', { delay: 200, origin: 'left' });
+    sr.reveal('.responsive-heading', { delay: 1200, origin: 'top',  distance: '0px' });
+    sr.reveal('.header', { delay: 800, origin: 'top', reset: false, mobile: false });
+    
 
     $('.magnetic-btn').each(function() {
         $(this).on('mousemove', function(e) {
@@ -145,6 +147,10 @@ $(document).ready(function () {
             e.preventDefault(); // Prevents default behavior if not at the top
             $('html, body').animate({ scrollTop: 0 }, 'slow'); // Smooth scroll to top
         }
+    })
+
+    $(window).on('beforeunload', function () {
+        $(window).scrollTop(0);
     })
 });
 
