@@ -1572,7 +1572,22 @@ label.logo {
 .legalHeader ul li a {
 	color: black;
 	font-size: 17px;
-	border-radius: 3px;   
+	border-radius: 3px;
+	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: inline-block;   
+}
+
+.legalHeader ul:hover li a {
+    opacity: .5;
+    text-decoration: none;
+    color: black;
+}
+
+.legalHeader ul li a:hover, .legalHeader ul li a:active {
+    opacity: 1;
+    text-decoration: none;
+    color: black !important;
+    transform: scale(1.1);
 }
 
 a.active, a:hover {
@@ -1630,10 +1645,6 @@ a.active, a:hover {
 	}
 	.legalHeader ul li a {
 	  font-size: 20px;
-	}
-	a:hover, a.active {
-	  background: none;
-	  color: #a8e2db;
 	}
 	#check:checked~ul {
 	  left: 0;

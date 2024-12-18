@@ -116,7 +116,7 @@ $(document).ready(function () {
     sr.reveal('.imgSR, .first-imgSR', { delay: 400, origin: 'bottom' });
     sr.reveal('.textSR', { delay: 200, origin: 'left' });
     sr.reveal('.responsive-heading', { delay: 1200, origin: 'top',  distance: '0px' });
-    sr.reveal('.header', { delay: 800, origin: 'top', reset: false, mobile: false });
+    sr.reveal('.header', { delay: 1400, origin: 'top', reset: false, mobile: false });
     
 
     $('.magnetic-btn').each(function() {

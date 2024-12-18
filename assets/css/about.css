@@ -3533,6 +3533,21 @@ input, select, textarea {
 		color: black;
 		font-size: 17px;
 		border-radius: 3px;   
+		transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    	display: inline-block;
+	}
+	
+	nav ul:hover li a {
+		opacity: .5;
+		text-decoration: none;
+		color: black;
+	}
+	
+	.hover-eff:hover, .hover-eff:active {
+		opacity: 1;
+		text-decoration: none;
+		color: black !important;
+		transform: scale(1.1);
 	}
 	
 	a.active, a:hover {
@@ -3589,10 +3604,6 @@ input, select, textarea {
 		}
 		nav ul li a {
 		  font-size: 20px;
-		}
-		a:hover, a.active {
-		  background: none;
-		  color: #a8e2db;
 		}
 		#check:checked~ul {
 		  left: 0;
