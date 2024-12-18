@@ -3550,11 +3550,6 @@ input, select, textarea {
 		transform: scale(1.1);
 	}
 	
-	a.active, a:hover {
-		color: #b3b3b3 !important;
-		text-decoration: none !important;
-	}
-	
 	.checkbtn {
 		font-size: 22px;
 		color: black;
