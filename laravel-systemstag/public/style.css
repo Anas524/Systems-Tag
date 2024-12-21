@@ -96,6 +96,11 @@ header {
     cursor: default;
 }
 
+.logo a:hover {
+    text-decoration: none;
+    color: black;
+}
+
 .logo a span {
     color: #15b29f;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
