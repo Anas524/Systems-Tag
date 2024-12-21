@@ -385,7 +385,7 @@
                     <h2 data-lang-ar="أبرز الأحداث" data-lang-en="Highlights">أبرز الأحداث</h2>
                     <ul class="box">
                         <li><a href="#" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
-                        <li><a href="{{ route( 'about' ) }}" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
+                        <li><a href="{{ route('about') }}" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
                         <li><a href="#footer" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
                     </ul>
                 </li>
