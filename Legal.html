@@ -9,26 +9,38 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Lalezar&family=Lilita+One&family=Marhey:wght@300..700&family=Original+Surfer&family=Pacifico&family=Paytone+One&family=Readex+Pro:wght@160..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://unpkg.com/scrollreveal"></script>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-		<nav class="legalHeader" style="direction: ltr;">
-			<input type="checkbox" id="check">
-			<label for="check" class="checkbtn" id="checkBtn">
-				<i class="fas fa-bars"></i>
-			</label>
-			<div class="logoimg">
+		<header class="legalHeader">
+			<div class="navbar">
+			  <div class="lhLogo">
 				<img src="images/St logo for Stellar.png" alt="Header Logo">
+				<a href="">Systems <span>Tag</span></a>
+			  </div>
+			  <ul class="links">
+				<li><a href="index.html" class="reveal-item" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
+				<li><a href="about.html" class="reveal-item" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
+				<li><a href="#contact" class="reveal-item" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
+				<li><a class="font-arabic reveal-item" id="toggleLang" style="cursor: pointer;">English</a></li>
+			  </ul>
+			  <div class="toggle_btn">
+				<i class="line line1"></i>
+				<i class="line line2"></i>
+				<i class="line line3"></i>
+			  </div>
 			</div>
-			<label class="logo" style="font-family: Arial, Helvetica, sans-serif;">Systems <span style="color: #15b29f;">Tag</span></label>
-			<ul>
-				<li><a href="index.html" data-lang-ar="الرئيسية" data-lang-en="Home" style="border-bottom: none;">الرئيسية</a></li>
-				<li><a href="about.html" data-lang-ar="معلومات عنا" data-lang-en="About" style="border-bottom: none;">معلومات عنا</a></li>
-				<li><a href="#contact" data-lang-ar="اتصل بنا" data-lang-en="Contact" style="border-bottom: none;">اتصل بنا</a></li>
-				<li><a class="font-arabic" id="toggleLang" style="cursor: pointer; border-bottom: none;">English</a></li>
-			</ul>
-		</nav>
+
+			<div class="dropdown_menu">
+				<li><a href="index.html" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
+				<li><a href="about.html" class="reveal-item" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
+				<li><a href="#contact" class="reveal-item" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
+				<li><a class="font-arabic reveal-item" id="toggleLangOne" style="cursor: pointer;">English</a></li>
+			</div>
+		</header>
+
+		<!-- Wrapper -->
 			<div id="wrapper" class="woutHeader">
 
 				<!-- Header -->

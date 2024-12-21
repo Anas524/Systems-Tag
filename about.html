@@ -12,24 +12,34 @@
 		<script src="https://unpkg.com/scrollreveal"></script>
 	</head>
 	<body class="is-preload" style="direction: ltr;">
-		<div class="headerSR">
-			<nav class="header">
-				<input type="checkbox" id="check">
-				<label for="check" class="checkbtn">
-					<i class="fas fa-bars"></i>
-				</label>
-				<div class="logoimg">
-					<img src="images/St logo for Stellar.png" alt="Header Logo">
-				</div>
-				<label class="logo reveal-item">Systems <span style="color: #15b29f;">Tag</span></label>
-				<ul>
-					<li><a href="index.html" class="reveal-item hover-eff" data-lang-ar="الرئيسية" data-lang-en="Home" style="border-bottom: none;">الرئيسية</a></li>
-					<li><a href="#" class="reveal-item hover-eff" data-lang-ar="معلومات عنا" data-lang-en="About" style="border-bottom: none;">معلومات عنا</a></li>
-					<li><a href="#aboutContact" class="reveal-item hover-eff" data-lang-ar="اتصل بنا" data-lang-en="Contact" style="border-bottom: none;">اتصل بنا</a></li>
-					<li><a class="font-arabic reveal-item hover-eff" id="toggleLang" style="cursor: pointer; border-bottom: none;">English</a></li>
-				</ul>
-			</nav>
-		</div>
+
+		<header>
+			<div class="navbar">
+			  <div class="logo">
+				<img src="images/St logo for Stellar.png" alt="Header Logo">
+				<a href="">Systems <span>Tag</span></a>
+			  </div>
+			  <ul class="links">
+				<li><a href="index.html" class="reveal-item" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
+				<li><a href="#" class="reveal-item" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
+				<li><a href="#aboutContact" class="reveal-item" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
+				<li><a class="font-arabic reveal-item" id="toggleLang" style="cursor: pointer;">English</a></li>
+			  </ul>
+			  <div class="toggle_btn">
+				<i class="line line1"></i>
+				<i class="line line2"></i>
+				<i class="line line3"></i>
+			  </div>
+			</div>
+
+			<div class="dropdown_menu">
+				<li><a href="index.html" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
+				<li><a href="#" class="reveal-item" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
+				<li><a href="#aboutContact" class="reveal-item" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
+				<li><a class="font-arabic reveal-item" id="toggleLangOne" style="cursor: pointer;">English</a></li>
+			</div>
+		</header>
+
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
@@ -141,7 +151,7 @@
 												</div>
 											</div>
 											<ul class="actions lDir">
-												<li><input style="font-weight: 600;" type="submit" value="إرسال رسالة" class="button primary"  data-lang-en="Send Message" 
+												<li><input style="font-weight: 600;" type="submit" value="إرسال رسالة" class="button primary"  data-lang-en="Send Message"
 													data-lang-ar="إرسال رسالة" /></li>
 											</ul>
 										</form>
