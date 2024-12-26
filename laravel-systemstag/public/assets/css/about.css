@@ -3472,14 +3472,14 @@ input, select, textarea {
 	}
 
 	@font-face {
-		font-family: 'Khebrat Musamim';
-		src: url('../fonts/18 Khebrat Musamim Regular.ttf') format('truetype');
+		font-family: 'kigelia-arabic-bold';
+		src: url('../fonts/kigelia-arabic-bold.otf') format('truetype');
 		font-weight: normal;
 		font-style: normal;
 	}
 
 	.font-arabic {
-		font-family: 'Khebrat Musamim';
+		font-family: 'kigelia-arabic-bold';
 	}
 
 	.font-english {

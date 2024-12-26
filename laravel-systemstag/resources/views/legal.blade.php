@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/legal.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-		<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Lalezar&family=Lilita+One&family=Marhey:wght@300..700&family=Original+Surfer&family=Pacifico&family=Paytone+One&family=Readex+Pro:wght@160..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="https://unpkg.com/scrollreveal"></script>
 	</head>
@@ -233,7 +233,8 @@
 							<article id="contact">
 								<h2 class="major" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</h2>
 								<p style="margin-bottom: 0;" class="text-center"><span data-lang-ar="المملكة العربية السعودية، القصيم، بريدة" data-lang-en="Kingdom of Saudi Arabia, Qassim, Buraidah">المملكة العربية السعودية، القصيم، بريدة،</span><br>AVL Tracking Maps<br>support@trackingmaps.sa</p>
-								<p style="font-family: 'Source Sans Pro', sans-serif;">+966920031711</p>
+								<p style="font-family: 'Source Sans Pro', sans-serif; margin-bottom: 0;">+966920031711</p>
+								<p style="font-family: 'Source Sans Pro', sans-serif;">+920013711</p>
 								<form method="post" action="#">
 									<div class="fields">
 										<div class="field half">

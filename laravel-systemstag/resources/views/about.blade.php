@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/about.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-		<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Lalezar&family=Lilita+One&family=Marhey:wght@300..700&family=Original+Surfer&family=Pacifico&family=Paytone+One&family=Readex+Pro:wght@160..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="https://unpkg.com/scrollreveal"></script>
 	</head>
@@ -21,7 +21,7 @@
 			  </div>
 			  <ul class="links">
 				<li><a href="{{ route('index') }}" class="reveal-item" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
-				<li><a href="#" class="reveal-item" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
+				<li><a href="{{ route('legal') }}" class="reveal-item" data-lang-ar="قانوني" data-lang-en="Legal">قانوني</a></li>
 				<li><a href="#aboutContact" class="reveal-item" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
 				<li><a class="font-arabic reveal-item" id="toggleLang" style="cursor: pointer;">English</a></li>
 			  </ul>
@@ -34,7 +34,7 @@
 
 			<div class="dropdown_menu">
 				<li><a href="{{ route('index') }}" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
-				<li><a href="#" class="reveal-item" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
+				<li><a href="{{ route('legal') }}" class="reveal-item" data-lang-ar="قانوني" data-lang-en="Legal">قانوني</a></li>
 				<li><a href="#aboutContact" class="reveal-item" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
 				<li><a class="font-arabic reveal-item" id="toggleLangOne" style="cursor: pointer;">English</a></li>
 			</div>
@@ -128,10 +128,11 @@
 							<section class="panel color4-alt">
 								<div class="intro color4 lDir">
 									<h2 class="major" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</h2>
-									<p style="margin-bottom: 0;"  data-lang-ar="المملكة العربية السعودية، القصيم، بريدة" data-lang-en="Kingdom of Saudi Arabia, Qassim, Buraidah">المملكة العربية السعودية، القصيم، بريدة<br>AVL Tracking Maps<br>support@trackingmaps.sa,<br>920013711</p>
+									<p style="margin-bottom: 0;"  data-lang-ar="المملكة العربية السعودية، القصيم، بريدة" data-lang-en="Kingdom of Saudi Arabia, Qassim, Buraidah">المملكة العربية السعودية، القصيم، بريدة</p>
 									<p style="font-family: 'Belleza', sans-serif; margin-bottom: 0;">AVL Tracking Maps</p>
 									<p style="margin-bottom: 0;">support@trackingmaps.sa</p>
-									<p>+966920031711</p>
+									<p style="margin-bottom: 0;">+966920031711</p>
+									<p>+920013711</p>
 								</div>
 								<div class="inner columns divided" id="aboutContact">
 									<div class="span-3-25">
@@ -151,7 +152,7 @@
 												</div>
 											</div>
 											<ul class="actions lDir">
-												<li><input style="font-weight: 600;" type="submit" value="إرسال رسالة" class="button primary"  data-lang-en="Send Message"
+												<li><input class="as-button" style="font-weight: 600;" type="submit" value="إرسال رسالة" class="button primary"  data-lang-en="Send Message"
 													data-lang-ar="إرسال رسالة" /></li>
 											</ul>
 										</form>

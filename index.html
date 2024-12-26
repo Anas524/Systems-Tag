@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/css/carousel.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Lalezar&family=Lilita+One&family=Marhey:wght@300..700&family=Original+Surfer&family=Pacifico&family=Paytone+One&family=Readex+Pro:wght@160..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <div id="splashScreen">
-        <img id="stLogo" src="img/Final logo copy 4.png" alt="logo">
+        <img id="stLogo" src="images/St logo for Stellar.png" alt="logo">
     </div>
 
     <header>
@@ -59,8 +60,8 @@
 
     <div class="position-relative text-overlay-container">
         <img src="images/Mobile chat 3D view copy.png" alt="Cover Image" class="img-fluid w-100 h100 imgSR">
-        <div class="position-absolute text-overlay d-flex flex-column justify-content-center align-items-left textSR">
-            <h1 class="display-5 fw-bold text-black" data-lang-ar="فريقك على بعد نقرة واحدة فقط" data-lang-en="Your team is just a click away">فريقك على بعد نقرة واحدة فقط</h1>
+        <div class="position-absolute text-overlay d-flex flex-column justify-content-center align-items-left textSR" style="direction: ltr;">
+            <h1 class="display-5 text-black" data-lang-ar="فريقك على بعد نقرة واحدة فقط" data-lang-en="Your team is just a click away">فريقك على بعد نقرة واحدة فقط</h1>
             <p class="fs-5 text-black" data-lang-ar="نحن نؤمن بأن العمل الجماعي يزدهر في بيئة تواصل سلسة" data-lang-en="we believe teamwork thrives in a seamless communication environment">نحن نؤمن بأن العمل الجماعي يزدهر في بيئة تواصل سلسة</p>
         </div>
     </div>
@@ -361,7 +362,7 @@
             <button id="prev"><</button>
             <!-- <button id="back" data-lang-ar="تحرك للخلف &#8599" data-lang-en="Go Back &#8599">تحرك للخلف &#8599</button> -->
             <a id="back" class="magnetic-btn" style="--clr:#e7e7e7; text-decoration: none; background: transparent;">
-                <span style="font-weight: 400;" data-lang-ar="تحرك للخلف &#8599" data-lang-en="Go Back &#8599">تحرك للخلف &#8599</span>
+                <span class="mbtn-txt" style="font-weight: 400;" data-lang-ar="تحرك للخلف &#8599" data-lang-en="Go Back &#8599">تحرك للخلف &#8599</span>
             </a>
             <button id="next">></button>
         </div>
@@ -381,56 +382,134 @@
         </div>
     </div>
 
-    <footer class="footer" id="footer">
-        <div class="art">
-            <ul class="footer-right text-center">
-                <li>
-                    <h2 data-lang-ar="أبرز الأحداث" data-lang-en="Highlights">أبرز الأحداث</h2>
-                    <ul class="box">
-                        <li><a href="#" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
-                        <li><a href="about.html" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
-                        <li><a href="#footer" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2 data-lang-ar="قانوني" data-lang-en="Legal">قانوني</h2>
-                    <ul class="box">
-                        <li><a href="Legal.html" data-lang-ar="خصوصية" data-lang-en="Privacy">خصوصية</a></li>
-                        <li><a href="Legal.html" data-lang-ar="شروط الخدمة" data-lang-en="Terms of services">شروط الخدمة</a></li>
-                        <li><a href="Legal.html" data-lang-ar="حماية" data-lang-en="Security">حماية</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2 class="mb-3" data-lang-ar="ابقى على اتصال" data-lang-en="Stay Connected">ابقى على اتصال</h2>
-                    <ul class="box">
-                        <p class="text-center"><span data-lang-ar="المملكة العربية السعودية، القصيم، بريدة" data-lang-en="Kingdom of Saudi Arabia, Qassim, Buraidah">المملكة العربية السعودية، القصيم، بريدة</span><br>AVL Tracking Maps<br>support@trackingmaps.sa<br>+966920031711</p>
-                    </ul>
-                </li>
-            </ul>
-            <div class="footer-left text-center">
+    <div class="people-comment-screen">
+        <h1 class="screen-heading" data-lang-ar="الناس يحبون التطبيق!" data-lang-en="People Love the App!">الناس يحبون التطبيق!</h1>
+        <div class="app-container">
+          <!-- Left Comments -->
+          <div class="comments">
+            <div class="comment-grid">
+              <div class="comment-tab">
+                <div class="comment-header">
+                  <img src="img/profile 1.jpg" alt="Profile Image">
+                  <h4>John D.</h4>
+                </div>
+                <p data-lang-ar="لقد غيّر هذا التطبيق حياتي!" data-lang-en="This app has changed my life!">"لقد غيّر هذا التطبيق حياتي!"</p>
+              </div>
+            </div>
+            <div class="comment-grid">
+              <div class="comment-tab cm-t2">
+                <div class="comment-header">
+                  <img src="img/profile 2.jpg" alt="Profile Image">
+                  <h4>Jane S.</h4>
+                </div>
+                <p data-lang-ar="لا أستطيع تخيل يومي بدونه!" data-lang-en="Can't imagine my day without it!">"لا أستطيع تخيل يومي بدونه!"</p>
+              </div>
+            </div>
+            <div class="comment-grid">
+              <div class="comment-tab">
+                <div class="comment-header">
+                  <img src="img/profile 3.jpg" alt="Profile Image">
+                  <h4>Mike R.</h4>
+                </div>
+                <p data-lang-ar="ميزات مذهلة وسهلة الاستخدام." data-lang-en="Amazing features and easy to use.">"ميزات مذهلة وسهلة الاستخدام."</p>
+              </div>
+            </div>
+          </div>
 
-                <h2 class="mb-3" data-lang-ar="احصل على تطبيقنا" data-lang-en="Get our App">احصل على تطبيقنا</h2>
-                <img class="footer-logo" src="img/Footer logo 2.png" alt="Systems Tag Logo">
-                <div>
-                    <a href="https://play.google.com/store/apps/details?id=com.system_tag.app&hl=en" target="_blank"><img src="img/logo 4 for stweb.png" alt="Download on Play Store"></a>
-                    <a href="https://apps.apple.com/us/app/systems-tag/id6738041260?l=ar" target="_blank"><img src="img/logo 3 for stweb.png" alt="Download on App Store"></a>
+          <!-- Center Mobile Image -->
+          <div class="mobile-image">
+            <img src="img/people-comment-screen img.png" alt="Mobile Image">
+          </div>
+
+          <!-- Right Comments -->
+          <div class="comments">
+            <div class="comment-grid">
+              <div class="comment-tab cm-t4">
+                <div class="comment-header">
+                  <img src="img/profile 4.jpg" alt="Profile Image">
+                  <h4>Sarah L.</h4>
                 </div>
-                <div class="social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <p data-lang-ar="أوصي به بشدة للجميع!" data-lang-en="Highly recommend to everyone!">"أوصي به بشدة للجميع!"</p>
+              </div>
+            </div>
+            <div class="comment-grid">
+              <div class="comment-tab">
+                <div class="comment-header">
+                  <img src="img/profile 5.jpg" alt="Profile Image">
+                  <h4>Chris P.</h4>
                 </div>
+                <p data-lang-ar="سهلة الاستخدام وفعالة للغاية." data-lang-en="Very user-friendly and efficient.">"سهلة الاستخدام وفعالة للغاية."</p>
+              </div>
             </div>
-            <div class="notice text-center">
-                Copyright Protected &copy;
-                <a href="http://avl.sa/" target="_blank"><strong>Tracking Maps</strong></a>
+            <div class="comment-grid">
+              <div class="comment-tab cm-t6">
+                <div class="comment-header">
+                  <img src="img/profile 6.jpg" alt="Profile Image">
+                  <h4>Emily D.</h4>
+                </div>
+                <p data-lang-ar="أفضل تطبيق استخدمته على الإطلاق." data-lang-en="Best app I have ever used.">"أفضل تطبيق استخدمته على الإطلاق."</p>
+              </div>
             </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="main-content" id="footer">
+        <div class="left-section">
+        <img src="img/Footer logo 3.png" alt="App Icon" class="mb-3">
+        <h1 class="footer-heading" data-lang-ar="قم بالتحميل الآن لخلق مستقبل أفضل!" data-lang-en="Download now to create a better future!">قم بالتحميل الآن لخلق مستقبل أفضل!</h1>
+        <div class="dropdown mt-3">
+            <button class="btn btn-primary foo-button" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" data-lang-ar="متوفر لنظامي التشغيل iOS وAndroid" data-lang-en="Available for iOS & Android">
+            متوفر لنظامي التشغيل iOS وAndroid
+            </button>
+            <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="https://apps.apple.com/us/app/systems-tag/id6738041260?l=ar" target="_blank" data-lang-ar="تنزيل لنظام iOS" data-lang-en="Download for iOS"><i class="fa-brands fa-apple pr-1"></i> تنزيل لنظام iOS</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="dropdown-item" href="https://play.google.com/store/apps/details?id=com.system_tag.app&hl=en" target="_blank" data-lang-ar="تنزيل للاندرويد" data-lang-en="Download for Android"><i class="fa-brands fa-google-play"></i> تنزيل للاندرويد</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="right-section">
+        <img src="img/ST web footer image copy 4.png" alt="Mobile Image" class="foo-image">
+        </div>
+    </div>
+
+    <footer class="footer-tab">
+        <div class="left-section">
+        <img src="images/St logo for Stellar.png" alt="App Icon">
+        <p class="m-0">Systems Tag</p>
+        <small data-lang-ar="تطبيق للتواصل السلس" data-lang-en="App for Seamless Communication">تطبيق للتواصل السلس</small>
+        </div>
+        <div class="right-section">
+            <ul>
+            <li class="foo-title" data-lang-ar="الصفحات" data-lang-en="Pages">Pages</li>
+            <li><a href="#" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
+            <li><a href="about.html" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
+            </ul>
+            <ul>
+            <li class="foo-title" data-lang-ar="التثبيت" data-lang-en="Install">التثبيت</li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.system_tag.app&hl=en" target="_blank" data-lang-ar="أندرويد" data-lang-en="Android">أندرويد</a></li>
+            <li><a href="https://apps.apple.com/us/app/systems-tag/id6738041260?l=ar" target="_blank" data-lang-ar="iOS" data-lang-en="iOS">iOS</a></li>
+            </ul>
+            <ul>
+            <li class="foo-title" data-lang-ar="قانوني" data-lang-en="Legal">قانوني</li>
+            <li><a href="Legal.html" data-lang-ar="سياسة الخصوصية" data-lang-en="Privacy Policy">سياسة الخصوصية</a></li>
+            <li><a href="Legal.html" data-lang-ar="شروط الخدمة" data-lang-en="Terms of Service">شروط الخدمة</a></li>
+            </ul>
+            <ul>
+            <li class="foo-title" data-lang-ar="الدعم" data-lang-en="Support">الدعم</li>
+            <li><a href="mailto:support@trackingmaps.sa">support@trackingmaps.sa</a></li>
+            <li><a href="tel:+966920031711">+966920031711</a></li>
+            </ul>
+            <ul>
+            <li class="copyright" style="color: rgb(105, 105, 105);">&copy; 2024 <a href="http://avl.sa/" target="_blank" style="color: black;">Tracking Maps</a></li>
+            <li style="color: rgb(105, 105, 105);">All rights reserved</li>
+            </ul>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

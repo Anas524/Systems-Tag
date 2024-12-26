@@ -35,11 +35,17 @@ $(document).ready(function () {
         $('[data-lang-ar]').each(function () {
             const text = $(this).data(`lang-${lang}`);
 
-            // Update placeholder for inputs or text for other elements
             if ($(this).is('input')) {
+                // Update placeholder for input elements
                 $(this).attr('placeholder', text);
+            } else if ($(this).is('button')) {
+                // Replace the entire content for button elements
+                $(this).html(text);
             } else {
-                $(this).text(text);
+                // For other elements, replace the text while preserving nested HTML
+                $(this).contents().filter(function () {
+                    return this.nodeType === 3; // Only text nodes
+                }).first().replaceWith(text);
             }
 
             // Switch font class based on language
@@ -55,24 +61,36 @@ $(document).ready(function () {
             : 'img/ST web image.png';
         $('.cover-image').attr('src', coverImage);
 
+        const footerImage = lang === 'ar'
+            ? 'img/ST web footer image copy.png'
+            : 'img/ST web footer image copy 4.png';
+        $('.foo-image').attr('src', footerImage);
+
         // Apply specific font-family for carousel
-        const arabicFont = 'Khebrat Musamim';
+        const arabicFont = 'kigelia-arabic-bold';
         const englishFont = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji';
 
         const carouselFont = lang === 'ar' ? arabicFont : englishFont;
-        $('.title, .topic, .des, .specifications').css('font-family', carouselFont);
+        $('.title, .topic, .des, .specifications, .mbtn-txt, .seeMore span').css('font-family', carouselFont);
+
+        const btnarabicFont = 'kigelia-arabic-bold';
+        const btnenglishFont = '"Belleza", sans-serif';
+
+        const footerTxtFont = lang === 'ar' ? btnarabicFont : btnenglishFont;
+        $('.foo-button, .as-button, .comment-tab h4').css('font-family', footerTxtFont);
 
         const legalArLetterS = '0';
         const legalEnLetterS = '0.2rem';
 
         const legalLetterSpacing = lang === 'ar' ? legalArLetterS : legalEnLetterS;
-        $('.inner p, .inner h2, .main-nav li a, article h2, .field label, .actions li input, .magnetic-btn').css('letter-spacing', legalLetterSpacing);
+        $('.inner p, .inner h2, .main-nav li a, article h2, .field label, .actions li input, .mbtn-txt, .seeMore span').css('letter-spacing', legalLetterSpacing);
 
+        // about screen and people-comment-screen text direction
         const asarabicDir = 'rtl';
         const asenglishDir = 'ltr';
 
         const aboutScreenDir = lang === 'ar' ? asarabicDir : asenglishDir;
-        $('.lDir').css('direction', aboutScreenDir);
+        $('.lDir, .comment-tab p').css('direction', aboutScreenDir);
 
         $('input[data-lang-en][data-lang-ar]').each(function () {
             // Update the value attribute based on the selected language
@@ -107,16 +125,16 @@ $(document).ready(function () {
     });
 
     //target elements, and specify options to create reveal animations
+    sr.reveal('.responsive-heading', { delay: 1200, origin: 'top',  distance: '0px' });
     sr.reveal('.imgSR, .first-imgSR', { delay: 400, origin: 'bottom' });
     sr.reveal('.textSR', { delay: 200, origin: 'left' });
-    sr.reveal('.responsive-heading', { delay: 1200, origin: 'top',  distance: '0px' });
     function applyScrollReveal() {
         if ($(window).width() <= 992) {
             // Disable ScrollReveal for mobile devices
-            ScrollReveal().clean('header'); // Remove existing ScrollReveal animations
+            ScrollReveal().clean('header, .legalHeader'); // Remove existing ScrollReveal animations
         } else {
             // Enable ScrollReveal for larger screens
-            ScrollReveal().reveal('header', {
+            ScrollReveal().reveal('header, .legalHeader', {
                 delay: 1400,
                 origin: 'top',
                 reset: false,
@@ -124,12 +142,24 @@ $(document).ready(function () {
             });
         }
     }
-
     applyScrollReveal();
-
     // Reapply ScrollReveal on window resize
     $(window).on('resize', function () {
         applyScrollReveal();
+    });
+
+    ScrollReveal().reveal('.main-content .right-section', {
+        beforeReveal: (el) => {
+          el.style.opacity = '0'; // Start invisible
+          el.style.transform = 'translate(50px, 87px)'; // Offset for 60 degrees
+        },
+        afterReveal: (el) => {
+          el.style.transition = 'transform 1s ease-out, opacity 1s ease-out';
+          el.style.transform = 'translate(0, 0)'; // Animate to original position
+          el.style.opacity = '1'; // Fade in
+        },
+        reset: true, // Reset animation when scrolling back
+        delay: 100
     });
 
 
@@ -231,4 +261,46 @@ $(document).ready(function () {
         $dropDownMenu.removeClass('open');
         $toggleBtn.removeClass('open');
     });
+
+    $(window).on('scroll', function () {
+        const scrollTop = $(window).scrollTop(); // Current scroll position
+        const windowHeight = $(window).height(); // Visible part of the window
+        const documentHeight = $(document).height(); // Total height of the page
+
+        if (scrollTop + windowHeight >= documentHeight - 50) {
+            // Add a class to make the footer visible
+            $('.footer-tab').addClass('visible');
+        } else {
+            // Remove the class to hide the footer
+            $('.footer-tab').removeClass('visible');
+        }
+    });
+
+    // Function to check if element is in viewport
+    function checkInView() {
+        // Loop through each .mobile-image and .comment-tab to check if it's in view
+        $('.mobile-image, .comment-tab').each(function() {
+          var windowHeight = $(window).height();
+          var elementTop = $(this).offset().top;
+          var elementBottom = elementTop + $(this).outerHeight();
+          var viewportTop = $(window).scrollTop();
+          var viewportBottom = viewportTop + windowHeight;
+
+          // If element is in the viewport, add the 'show' class
+          if (elementBottom > viewportTop && elementTop < viewportBottom) {
+            $(this).addClass('show');
+          } else {
+            // If element is out of viewport, remove the 'show' class to reset animation
+            $(this).removeClass('show');
+          }
+        });
+    }
+
+    // Trigger the check on scroll and load
+    $(window).on('scroll load', function() {
+    checkInView();
+    });
+
+    // Initial check on page load
+    checkInView();
 });
