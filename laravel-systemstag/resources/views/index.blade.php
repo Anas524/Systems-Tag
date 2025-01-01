@@ -27,9 +27,9 @@
           </div>
           <ul class="links m-0">
             <li><a href="#" id="home" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
-            <li><a href="{{ route('about') }}" class="reveal-item" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
-            <li><a href="#footer" class="reveal-item" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
-            <li><a class="font-arabic reveal-item" id="toggleLang" style="cursor: pointer;">English</a></li>
+            <li><a href="{{ route('about') }}" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
+            <li><a href="#footer" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
+            <li><a class="font-arabic" id="toggleLang" style="cursor: pointer;">English</a></li>
           </ul>
           <div class="toggle_btn">
             <i class="line line1"></i>
@@ -40,9 +40,9 @@
 
         <div class="dropdown_menu">
             <li><a href="#" id="homeOne" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
-            <li><a href="{{ route('about') }}" class="reveal-item" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
-            <li><a href="#footer" class="reveal-item" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
-            <li><a class="font-arabic reveal-item" id="toggleLangOne" style="cursor: pointer;">English</a></li>
+            <li><a href="{{ route('about') }}" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
+            <li><a href="#footer" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
+            <li><a class="font-arabic" id="toggleLangOne" style="cursor: pointer;">English</a></li>
         </div>
     </header>
 
@@ -362,7 +362,7 @@
             <button id="prev"><</button>
             <!-- <button id="back" data-lang-ar="تحرك للخلف &#8599" data-lang-en="Go Back &#8599">تحرك للخلف &#8599</button> -->
             <a id="back" class="magnetic-btn" style="--clr:#e7e7e7; text-decoration: none; background: transparent;">
-                <span style="font-weight: 400;" data-lang-ar="تحرك للخلف &#8599" data-lang-en="Go Back &#8599">تحرك للخلف &#8599</span>
+                <span class="mbtn-txt" style="font-weight: 400;" data-lang-ar="تحرك للخلف &#8599" data-lang-en="Go Back &#8599">تحرك للخلف &#8599</span>
             </a>
             <button id="next">></button>
         </div>

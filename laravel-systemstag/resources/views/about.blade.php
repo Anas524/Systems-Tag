@@ -20,10 +20,10 @@
 				<a href="">Systems <span>Tag</span></a>
 			  </div>
 			  <ul class="links">
-				<li><a href="{{ route('index') }}" class="reveal-item" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
-				<li><a href="{{ route('legal') }}" class="reveal-item" data-lang-ar="قانوني" data-lang-en="Legal">قانوني</a></li>
-				<li><a href="#aboutContact" class="reveal-item" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
-				<li><a class="font-arabic reveal-item" id="toggleLang" style="cursor: pointer;">English</a></li>
+				<li><a href="{{ route('index') }}" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
+				<li><a href="{{ route('legal') }}" data-lang-ar="قانوني" data-lang-en="Legal">قانوني</a></li>
+				<li><a href="#aboutContact" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
+				<li><a class="font-arabic" id="toggleLang" style="cursor: pointer;">English</a></li>
 			  </ul>
 			  <div class="toggle_btn">
 			  	<i class="line line1"></i>
@@ -34,9 +34,9 @@
 
 			<div class="dropdown_menu">
 				<li><a href="{{ route('index') }}" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
-				<li><a href="{{ route('legal') }}" class="reveal-item" data-lang-ar="قانوني" data-lang-en="Legal">قانوني</a></li>
-				<li><a href="#aboutContact" class="reveal-item" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
-				<li><a class="font-arabic reveal-item" id="toggleLangOne" style="cursor: pointer;">English</a></li>
+				<li><a href="{{ route('legal') }}" data-lang-ar="قانوني" data-lang-en="Legal">قانوني</a></li>
+				<li><a href="#aboutContact" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
+				<li><a class="font-arabic" id="toggleLangOne" style="cursor: pointer;">English</a></li>
 			</div>
 		</header>
 
@@ -136,7 +136,7 @@
 								</div>
 								<div class="inner columns divided" id="aboutContact">
 									<div class="span-3-25">
-										<form method="post" action="#">
+										<!-- <form method="post" action="#">
 											<div class="fields">
 												<div class="field half lDir">
 													<label for="name" data-lang-ar="اسم" data-lang-en="Name">اسم</label>
@@ -155,7 +155,8 @@
 												<li><input class="as-button" style="font-weight: 600;" type="submit" value="إرسال رسالة" class="button primary"  data-lang-en="Send Message"
 													data-lang-ar="إرسال رسالة" /></li>
 											</ul>
-										</form>
+										</form> -->
+										@include('includes.contactform')
 									</div>
 									<div class="span-1-5">
 										<ul class="contact-icons color1">

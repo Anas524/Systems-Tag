@@ -20,10 +20,10 @@
 				<a href="">Systems <span>Tag</span></a>
 			  </div>
 			  <ul class="links">
-				<li><a href="{{ route('index') }}" class="reveal-item" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
-				<li><a href="{{ route('about') }}" class="reveal-item" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
-				<li><a href="#contact" class="reveal-item" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
-				<li><a class="font-arabic reveal-item" id="toggleLang" style="cursor: pointer;">English</a></li>
+				<li><a href="{{ route('index') }}" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
+				<li><a href="{{ route('about') }}" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
+				<li><a href="#contact" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
+				<li><a class="font-arabic" id="toggleLang" style="cursor: pointer;">English</a></li>
 			  </ul>
 			  <div class="toggle_btn">
 			  	<i class="line line1"></i>
@@ -34,9 +34,9 @@
 
 			<div class="dropdown_menu">
 				<li><a href="{{ route('index') }}" data-lang-ar="الرئيسية" data-lang-en="Home">الرئيسية</a></li>
-				<li><a href="{{ route('about') }}" class="reveal-item" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
-				<li><a href="#contact" class="reveal-item" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
-				<li><a class="font-arabic reveal-item" id="toggleLangOne" style="cursor: pointer;">English</a></li>
+				<li><a href="{{ route('about') }}" data-lang-ar="معلومات عنا" data-lang-en="About">معلومات عنا</a></li>
+				<li><a href="#contact" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</a></li>
+				<li><a class="font-arabic" id="toggleLangOne" style="cursor: pointer;">English</a></li>
 			</div>
 		</header>
 
@@ -232,10 +232,12 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major" data-lang-ar="اتصل بنا" data-lang-en="Contact">اتصل بنا</h2>
-								<p style="margin-bottom: 0;" class="text-center"><span data-lang-ar="المملكة العربية السعودية، القصيم، بريدة" data-lang-en="Kingdom of Saudi Arabia, Qassim, Buraidah">المملكة العربية السعودية، القصيم، بريدة،</span><br>AVL Tracking Maps<br>support@trackingmaps.sa</p>
+								<p style="margin-bottom: 0;"><span data-lang-ar="المملكة العربية السعودية، القصيم، بريدة" data-lang-en="Kingdom of Saudi Arabia, Qassim, Buraidah">المملكة العربية السعودية، القصيم، بريدة</p>
+								<p style="margin-bottom: 0;">AVL Tracking Maps</p>
+								<p style="margin-bottom: 0;">support@trackingmaps.sa</p>
 								<p style="font-family: 'Source Sans Pro', sans-serif; margin-bottom: 0;">+966920031711</p>
 								<p style="font-family: 'Source Sans Pro', sans-serif;">+920013711</p>
-								<form method="post" action="#">
+								<!-- <form method="post" action="#">
 									<div class="fields">
 										<div class="field half">
 											<label for="name" data-lang-ar="اسم" data-lang-en="Name">اسم</label>
@@ -254,7 +256,8 @@
 										<li><input type="submit" value="إرسال رسالة" class="primary" data-lang-ar="إرسال رسالة" data-lang-en="Send Message"/></li>
 										<li><input type="reset" value="إعادة ضبط" data-lang-ar="إعادة ضبط" data-lang-en="Reset"/></li>
 									</ul>
-								</form>
+								</form> -->
+								@include('includes.contactform')
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>

@@ -3704,3 +3704,18 @@ input, select, textarea {
 		  margin-top: 30px;
 		}
 	}
+
+	.success-msg {
+		padding: 0 20px 20px;
+		font-weight: bold;
+		color: #15b29f;
+		text-align: center;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 0 0 5px rgba(21, 178, 159, 0.6);
+	}
+
+	.error-msg {
+		font-size: small;
+		margin-top: 5px;
+		color:white;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), 0 0 5px rgba(255, 0, 0, 0.6);
+	}
