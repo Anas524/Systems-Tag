@@ -768,3 +768,24 @@ header {
         margin-bottom: 150%;
     }
 }
+
+#systems_tag_live_chat {
+    direction: rtl;
+    z-index: 5000;
+    cursor: pointer;
+}
+
+#close-chat {
+    border: none;
+    font-size: large;
+}
+
+#close-chat:hover{
+    background-color: #dfdfe0;
+    border-radius: 50px;
+}
+
+.chat-window[data-v-6164ac83] {
+    background-color: white !important;
+    font-family: 'kigelia-arabic-bold' !important;
+}

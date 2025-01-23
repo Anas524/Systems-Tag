@@ -1750,3 +1750,31 @@ input, select, textarea {
 	color:white;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), 0 0 5px rgba(255, 0, 0, 0.6);
 }
+
+#systems_tag_live_chat {
+	direction: rtl;
+	color: black;
+}
+
+#chat-widget {
+	z-index: 60000 !important;
+	cursor: pointer;
+}
+
+#close-chat {
+	border: none !important;
+	font-size: large;
+	color: black !important;
+	box-shadow: none;
+	padding: 0 8px;
+	border-radius: 50px;
+}
+
+#close-chat:hover{
+	background-color: #dfdfe0;
+	border-radius: 50px;
+}
+.chat-window[data-v-6164ac83] {
+	background-color: white !important;
+	font-family: 'kigelia-arabic-bold' !important;
+}

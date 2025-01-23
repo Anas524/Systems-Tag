@@ -69,7 +69,7 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Intro -->
+						<!-- Privacy Policy -->
 							<article id="intro" style="direction: ltr;">
 								<h2 class="major" data-lang-ar="سياسة الخصوصية" data-lang-en="Privacy Policy">سياسة الخصوصية</h2>
 								<span style="font-size: xx-large;"> Introduction </span> </br>
@@ -176,7 +176,7 @@
 								Last Updated at “2024-11-13”
 							</article>
 
-						<!-- Work -->
+						<!-- Terms & Conditions -->
 							<article id="work" style="direction: ltr;">
 								<h2 class="major" data-lang-ar="الشروط والأحكام" data-lang-en="Terms & Conditions">الشروط والأحكام</h2>
 								Welcome to Systems Tag Chat, a SaaS (Software as a Service) platform provided by Tracking Maps (“Systems Tag,” “we,” “us,” or “our”). These Terms and Conditions govern your use of our platform and services. By accessing or using Systems Tag Chat, you agree to comply with and be bound by the following terms and conditions:
@@ -237,26 +237,6 @@
 								<p style="margin-bottom: 0;">support@trackingmaps.sa</p>
 								<p style="font-family: 'Source Sans Pro', sans-serif; margin-bottom: 0;">+966920031711</p>
 								<p style="font-family: 'Source Sans Pro', sans-serif;">+920013711</p>
-								<!-- <form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name" data-lang-ar="اسم" data-lang-en="Name">اسم</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email" data-lang-ar="بريد إلكتروني" data-lang-en="Email">بريد إلكتروني</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message" data-lang-ar="رسالة" data-lang-en="Message">رسالة</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="إرسال رسالة" class="primary" data-lang-ar="إرسال رسالة" data-lang-en="Send Message"/></li>
-										<li><input type="reset" value="إعادة ضبط" data-lang-ar="إعادة ضبط" data-lang-en="Reset"/></li>
-									</ul>
-								</form> -->
 								@include('includes.contactform')
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>

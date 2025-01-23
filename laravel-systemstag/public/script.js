@@ -303,4 +303,32 @@ $(document).ready(function () {
 
     // Initial check on page load
     checkInView();
+
+    // Dynamically add the required HTML and scripts
+    (function () {
+        const div = document.createElement("div");
+        div.id = "systems_tag_live_chat";
+        div.setAttribute(
+          "channel_key",
+          "656695f324ad5896151eec0cf4202c1066f68119"
+        );
+        div.setAttribute("base_url", "http://chat.unitedgroupone.com/");
+        document.body.appendChild(div);
+
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = "http://chat.unitedgroupone.com/css/app.css";
+        document.head.appendChild(link);
+
+        const vendorsScript = document.createElement("script");
+        vendorsScript.src =
+          "http://chat.unitedgroupone.com/js/chunk-vendors.js";
+        vendorsScript.defer = true;
+        document.body.appendChild(vendorsScript);
+
+        const appScript = document.createElement("script");
+        appScript.src = "http://chat.unitedgroupone.com/js/app.js";
+        appScript.defer = true;
+        document.body.appendChild(appScript);
+    })();
 });

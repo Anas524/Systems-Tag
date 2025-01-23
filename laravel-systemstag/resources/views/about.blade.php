@@ -136,26 +136,6 @@
 								</div>
 								<div class="inner columns divided" id="aboutContact">
 									<div class="span-3-25">
-										<!-- <form method="post" action="#">
-											<div class="fields">
-												<div class="field half lDir">
-													<label for="name" data-lang-ar="اسم" data-lang-en="Name">اسم</label>
-													<input type="text" name="name" id="name" />
-												</div>
-												<div class="field half lDir">
-													<label for="email" data-lang-ar="بريد إلكتروني" data-lang-en="Email">بريد إلكتروني</label>
-													<input type="email" name="email" id="email" />
-												</div>
-												<div class="field lDir">
-													<label for="message" data-lang-ar="رسالة" data-lang-en="Message">رسالة</label>
-													<textarea name="message" id="message" rows="4"></textarea>
-												</div>
-											</div>
-											<ul class="actions lDir">
-												<li><input class="as-button" style="font-weight: 600;" type="submit" value="إرسال رسالة" class="button primary"  data-lang-en="Send Message"
-													data-lang-ar="إرسال رسالة" /></li>
-											</ul>
-										</form> -->
 										@include('includes.contactform')
 									</div>
 									<div class="span-1-5">

@@ -50,7 +50,6 @@ class StController extends Controller
             }
         }
 
-        // Redirect back to the appropriate page with a success message
         return redirect($redirectPath)->with('success', 'Your message has been submitted successfully!');
     }
 }
